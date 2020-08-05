@@ -12,3 +12,10 @@ then press 2 on the launcher
 Then type localhost:4343 in your browser then u got it
 
 If you get any errors go to https://tinyurl.com/issuesgit
+
+errors:
+The file /Users/Guest1/desktop/wrapper-offline/does not exist.
+then you didnt put the wrapper-offline folder in desktop [No other folders just desktop]
+
+The file /Users/Guest1/desktop/wrapper-offline/autostart-http-server.sh does not exist.
+Put the autostart-http-server.sh in wrapper-offline folder [No other folders just wrapper-offline]
