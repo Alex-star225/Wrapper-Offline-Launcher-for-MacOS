@@ -8,6 +8,7 @@ Then press 1
 then type your password
 After 10 seconds it will asume you're done 
 Ok, when its done go on the server folder and run the.crt file then type your password
+  - If you can't figure out how to install HTTPS certs, you can go to localhost:4664 and add a security exception, but this'll need to be done on each browser you use Wrapper: Offline with.
 then press 2 on the launcher
 Then type localhost:4343 in your browser then u got it
 
