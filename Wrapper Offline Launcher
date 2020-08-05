@@ -1,0 +1,65 @@
+#!/bin/sh
+cd ..
+which sh
+clear
+echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+echo What do you want to do!
+echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+echo 1 - Install HTTP-Server [Only needed once]
+echo 2 - Start Wrapper Offline [BROKEN]
+echo    
+
+
+
+          while true; do
+            read -p "Selection: " sel2
+            case $sel2 in
+                [1]* )
+                clear
+                echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                echo Downloading Wrapper Offline HTTP Server
+                echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                
+                echo Downloading Http-server
+                sudo npm install http-server -g &
+                sleep 10
+                clear
+                
+                
+                echo  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+                echo Wrapper Offline has been installed! Now just  press 2. to run wrapper offline.
+                echo  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+                echo
+              
+
+
+
+               ;;
+                [2]* )
+                clear
+                echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                echo Starting Wrapper Offline Node.js localhost
+                echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                cd $Dir/wrapper
+                npm start
+
+                echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                echo Starting Wrapper Offfline HTTP Server NOTE: You need to install the the.crt by clicking it
+                echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+                cd $Dir/server
+                http-server -p 4664 -S -C the.crt -K the.key
+
+
+            while [ true ]
+                do
+                   
+                    read -r -p "Press any key to continue..." key
+                done
+                ;;
+                * ) echo "";;
+            esac
+        done
+        ;;
+        * );;
+    esac
+done
