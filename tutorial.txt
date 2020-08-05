@@ -1,0 +1,14 @@
+How to run:
+First Download wrapper offline 
+Then, put Wrapper offline folder in your desktop [If you dont you will get erorrs on the launcher!]
+Then, get node.js http://node.js.org/
+After that get Adobe flash https://get.adobe.com/flashplayer/
+then run Wrapper offline launcher file.
+Then press 1 
+then type your password
+After 10 seconds it will asume you're done 
+Ok, when its done go on the server folder and run the.crt file then type your password
+then press 2 on the launcher
+Then type localhost:4343 in your browser then u got it
+
+If you get any errors go to https://tinyurl.com/issuesgit
